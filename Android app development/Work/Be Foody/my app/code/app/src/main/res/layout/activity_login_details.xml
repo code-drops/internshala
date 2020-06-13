@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginDetailsActivity">
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You logged in with following credentials"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textWelcome"
+        />
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number : "
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textCredentials"
+        />
+    <TextView
+        android:id="@+id/textInputNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789"
+        android:textStyle="italic"
+        android:textSize="20sp"
+
+        android:layout_below="@+id/textCredentials"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/textNumber"
+        />
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/textNumber"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/textInputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwerty"
+        android:layout_toEndOf="@+id/textPassword"
+        android:layout_below="@+id/textInputNumber"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>
